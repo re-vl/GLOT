@@ -1,0 +1,17 @@
+.review {
+   &__title {
+      @include title;
+   }
+   &__delim {
+      @include delimeter;
+   }
+   h3 {
+      margin-top: 17px;
+      padding: 0 20px 0 20px;
+      text-align: center;
+      font-size: 21px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #2e2e2e;
+   }
+}

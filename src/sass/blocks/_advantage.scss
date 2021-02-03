@@ -1,0 +1,31 @@
+.advantage {
+   min-height: 590px;
+   background-color: #f3f3f3;
+   &__title {
+      @include title;
+   }
+   &__wrapper {
+      display: grid;
+      margin-top: 25px;
+      grid-template: repeat(4, auto) / repeat(2, auto);
+      column-gap: 99px;
+      row-gap: 16px;
+   }
+   &__item {
+      display: flex;
+      img {
+         margin-top: 10px;
+         margin-right: 17px;
+      }
+      h3 {
+         font-size: 16px;
+         font-weight: 700;
+         color: var(--main-color);
+      }
+      p {
+         font-size: 14px;
+         font-weight: 300;
+         color: #3a3a3a;
+      }
+   }
+}

@@ -1,0 +1,40 @@
+@import "libs/bootstrap-reboot.min";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+   font-family: "Roboto", sans-serif;
+   margin: 0 auto;
+   padding: 0;
+}
+
+.container {
+   width: 1160px;
+}
+
+@import "blocks/general";
+@import "blocks/advantage";
+@import "blocks/works";
+@import "blocks/separator";
+@import "blocks/prices";
+@import "blocks/consultation";
+@import "blocks/scheme";
+@import "blocks/review";
+@import "blocks/slider";
+@import "blocks/guestions";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/forms";
+@import "blocks/media";
+
+.pageup {
+   display: none;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+   width: 40px;
+   height: 40px;
+   color: var(--main-color);
+}

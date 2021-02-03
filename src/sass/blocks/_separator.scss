@@ -1,0 +1,17 @@
+.separator {
+   padding-top: 58px;
+   margin: 0 auto;
+   height: 342px;
+   &__icon {
+      text-align: center;
+   }
+   h2 {
+      margin-top: 20px;
+      @include title-white;
+   }
+   h3 {
+      margin-top: 22px;
+      width: 90%;
+      @include subtitle-white;
+   }
+}
