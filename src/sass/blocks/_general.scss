@@ -2,7 +2,7 @@
    position: relative;
    padding: 0px 15px 80px 15px;
    background: url(../img/general.jpg) center center/cover no-repeat;
-   max-height: 930px;
+   min-height: 930px;
    color: #ffffff;
    .general__wrapper {
       display: flex;
@@ -72,7 +72,7 @@
    &__delim {
       display: flex;
       justify-content: space-between;
-      width: 809px;
+      max-width: 809px;
       height: 10px;
       &_first {
          margin-top: 4px;

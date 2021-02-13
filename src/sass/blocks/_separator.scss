@@ -1,7 +1,8 @@
 .separator {
    padding-top: 58px;
    margin: 0 auto;
-   height: 342px;
+   min-height: 342px;
+
    &__icon {
       text-align: center;
    }

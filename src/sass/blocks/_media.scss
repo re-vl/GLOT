@@ -1,26 +1,23 @@
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
 }
-
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (max-width: 1200px) {
    .container {
-      max-width: 1100px;
-      .works {
-         &__wrapper {
-            column-gap: 1%;
-         }
-      }
-   }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-   .container {
-      width: 970px;
+      max-width: 973px;
    }
    .general {
-      li {
-         padding: 0 5px 0 5px;
-         font-size: 14px;
+      .general__wrapper {
+         max-width: 95%;
       }
+      &__menu {
+         li {
+            padding: 0 5px 0 5px;
+            font-size: 13px;
+         }
+      }
+      &__phone {
+         font-size: 16px;
+      }
+
       h1 {
          font-size: 64px;
       }
@@ -39,89 +36,8 @@
          row-gap: 26px;
       }
    }
-   .scheme {
-      &__wrapTop {
-         grid-template-columns: repeat(2, 1fr);
-         column-gap: 43px;
-      }
-      &__wrapBott {
-         width: 740px;
-         column-gap: 46px;
-      }
-   }
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-   .container {
-      width: 758px;
-   }
-   .general {
-      min-height: 600px;
-      &__logo {
-         margin: 13px 0 0 0;
-      }
-      &__menu {
-         flex-wrap: wrap;
-         width: 35%;
-         li {
-            margin-top: 35px;
-            padding: 0 5px 0 5px;
-            font-size: 14px;
-            flex-grow: 10 1 1;
-         }
-      }
-      h1 {
-         font-size: 60px;
-      }
-      h3 {
-         font-size: 30px;
-      }
-      &__grid {
-         margin: 27px 10px 0 10px;
-         column-gap: 10px;
-      }
-      &__phone {
-         font-size: 15px;
-      }
-      &__delim {
-         width: 698px;
-      }
-      &__btn {
-         margin: 24px auto 0 auto;
-      }
-   }
-   .advantage {
-      &__wrapper {
-         margin: 25px 15px 0 15px;
-         column-gap: 39px;
-      }
-   }
-   .prices {
-      &__wrapper {
-         grid-template-columns: repeat(2, 261px);
-         grid-template-rows: repeat(2, auto);
-         row-gap: 26px;
-      }
-   }
-   .scheme {
-      &__wrapTop {
-         width: 720px;
-         grid-template-columns: repeat(2, 1fr);
-         column-gap: 43px;
-      }
-      &__wrapBott {
-         width: 720px;
-         column-gap: 46px;
-      }
-   }
-   .footer {
-      h3 {
-         width: 230px;
-      }
-   }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 992px) {
    .container {
       width: 556px;
    }
@@ -255,6 +171,301 @@
       }
       &__phone {
          width: 120px;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .container {
+      width: 556px;
+   }
+   .general {
+      min-height: 600px;
+      &__logo {
+         margin: 13px 0 0 0;
+      }
+      &__menu {
+         flex-wrap: wrap;
+         width: 50%;
+         li {
+            margin-top: 35px;
+            padding: 0 5px 0 5px;
+            font-size: 14px;
+            flex-grow: 10 1 1;
+         }
+      }
+      &__btn-menu {
+         display: block;
+         position: absolute;
+         top: 5%;
+         right: 2%;
+      }
+      &__cont {
+         margin-top: 38px;
+      }
+      h1 {
+         font-size: 60px;
+      }
+      h3 {
+         font-size: 30px;
+      }
+      &__grid {
+         margin: 27px 10px 0 10px;
+         column-gap: 10px;
+      }
+      &__phone {
+         font-size: 15px;
+      }
+      &__delim {
+         width: 536px;
+      }
+      &__btn {
+         margin: 24px auto 0 auto;
+      }
+   }
+   .advantage {
+      &__wrapper {
+         margin: 25px 15px 0 15px;
+         grid-template: repeat(8, auto) / 0;
+         div {
+            &:nth-child(2) {
+               width: 450px;
+            }
+         }
+      }
+   }
+   .prices {
+      &__wrapper {
+         grid-template-columns: repeat(1, 261px);
+         grid-template-rows: repeat(4, auto);
+         row-gap: 26px;
+      }
+   }
+   .consultation {
+      &__sell {
+         form {
+            flex-direction: column;
+            align-items: center;
+            div {
+               margin-top: 25px;
+               &:nth-child(3) {
+                  margin: 25px 2px 60px 2px;
+               }
+            }
+         }
+      }
+      &__img {
+         top: -28%;
+      }
+   }
+   .scheme {
+      &__wrapTop {
+         width: 520px;
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 43px;
+      }
+      &__wrapBott {
+         width: 520px;
+         column-gap: 43px;
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+   .slider {
+      width: 556px;
+   }
+   .slick-prev {
+      left: 150px;
+      top: 60px;
+   }
+   .slick-next {
+      right: 150px;
+      top: 60px;
+   }
+   .slider__item {
+      p {
+         max-width: 476px;
+      }
+   }
+   .quest {
+      &__sell {
+         form {
+            max-width: 556px;
+            div {
+               flex: 1 1 calc(90% - 10px);
+            }
+         }
+      }
+   }
+   .footer {
+      h3 {
+         width: 200px;
+         font-size: 14px;
+         padding: 0 5px;
+      }
+      &__cont {
+         font-size: 14px;
+         text-align: left;
+      }
+      &__phone {
+         width: 120px;
+      }
+   }
+}
+@media (max-width: 576px) {
+   .container {
+      width: 320px;
+   }
+   .general {
+      padding: 10px 15px 15px 0;
+      .general__wrapper {
+         display: block;
+      }
+      &__logo {
+         display: block;
+         margin: 13px auto;
+      }
+      &__menu {
+         display: block;
+         li {
+            display: block;
+            border-right: none;
+            font-size: 20px;
+         }
+      }
+      &__btn-menu {
+         display: block;
+      }
+      &__cont {
+         display: block;
+      }
+      &__quest {
+         text-align: center;
+      }
+      &__phone {
+         text-align: center;
+      }
+      h2 {
+         font-size: 20px;
+      }
+      h1 {
+         font-size: 40px;
+      }
+      h3 {
+         font-size: 25px;
+      }
+      &__grid {
+         margin: 27px 10px 0 10px;
+         column-gap: 10px;
+      }
+      &__phone {
+         font-size: 15px;
+      }
+      &__delim {
+         width: 536px;
+      }
+      &__btn-menu {
+         display: block;
+         position: relative;
+         margin: 24px auto 24px auto;
+      }
+      &__delim {
+         max-width: 310px;
+         &_first {
+            width: 100px;
+         }
+         &_second {
+            width: 10px;
+         }
+      }
+      &__grid {
+         grid-template: repeat(4, 1fr) / 1fr;
+      }
+   }
+   .advantage {
+      &__wrapper {
+         display: block;
+         margin: 25px 15px 0 15px;
+         padding-top: 15px;
+      }
+      div {
+         &:nth-child(2) {
+            width: 290px;
+         }
+      }
+   }
+   .works {
+      padding: 0 10px;
+      h3 {
+         margin: 17px 10px 0 10px;
+      }
+      &__wrapper {
+         display: grid;
+         grid-template: repeat(3, auto) / 1fr;
+      }
+   }
+   .consultation {
+      padding: 0 10px;
+      &__form {
+         width: 95%;
+         .consultation__sell {
+            form {
+               div {
+                  width: 240px;
+               }
+            }
+         }
+      }
+      &__img {
+         top: -28%;
+      }
+   }
+   .scheme {
+      padding: 0 10px 10px 10px;
+      &__title {
+         margin-bottom: 0;
+         font-size: 20px;
+      }
+      &__wrapTop {
+         width: 310px;
+         grid-template: repeat(4, auto) / 300px;
+         column-gap: 10px;
+      }
+      &__wrapBott {
+         width: 310px;
+         column-gap: 10px;
+         grid-template: repeat(4, auto) / 300px;
+      }
+   }
+   .slider {
+      width: 300px;
+   }
+   .slider__item {
+      p {
+         max-width: 280px;
+      }
+   }
+   .footer {
+      &__bottom {
+         padding: 20px;
+         display: block;
+         text-align: center;
+      }
+      &__cont {
+         margin: 10px auto;
+         text-align: center;
+      }
+      h3 {
+         margin: 20px auto;
+      }
+      &__button {
+         margin: 20px auto;
+      }
+      &__delim {
+         width: 90%;
+      }
+      &__bottom-bot {
+         font-size: 12px;
+         display: grid;
+         grid-template: repeat(3, auto) / 1fr;
       }
    }
 }

@@ -9,15 +9,9 @@ $(document).ready(function () {
       centerMode: false,
       responsive: [
          {
-            breakpoint: 768,
-            settings: {
-               slidesToShow: 1,
-            },
-         },
-         {
             breakpoint: 576,
             settings: {
-               slidesToShow: 1,
+               arrows: false,
             },
          },
       ],
