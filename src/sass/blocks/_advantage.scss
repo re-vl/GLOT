@@ -26,6 +26,17 @@
          font-size: 14px;
          font-weight: 300;
          color: #3a3a3a;
+         overflow: hidden;
+      }
+      .anim-show {
+         transform: translate(0px, 120%);
+         opacity: 0;
+         transition: all 0.8s ease 0s;
+      }
+      .anim-show.active,
+      .active .anim-show {
+         transform: translate(0px, 0px);
+         opacity: 1;
       }
    }
 }

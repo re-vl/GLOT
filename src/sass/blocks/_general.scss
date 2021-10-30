@@ -63,12 +63,28 @@
       text-align: center;
       color: var(--main-color);
    }
+   .anim-items {
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 1s ease 0s;
+   }
+   .anim-items.active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+   }
    h3 {
       font-size: 42px;
       font-weight: 400;
       text-transform: uppercase;
       text-align: center;
    }
+
+   h3.active {
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 1s ease 0.5s;
+   }
+
    &__delim {
       display: flex;
       justify-content: space-between;
