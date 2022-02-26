@@ -60,22 +60,6 @@ $(document).ready(function () {
 
    $("input[name=phone]").mask("+7 (999) 999-99-99");
 
-   // форма подтверждения и отправка почты
-   /* $("form").submit(function (e) {
-      e.preventDefault(); //отменяем стандарт поведение броузера, будет без перезагрузки
-      $.ajax({
-         //type: "POST",
-         //url: "mailer/smart.php",
-         //data: $(this).serialize(),
-      }).done(function () {
-         $(this).find("input").val("");
-         $("#form1").fadeOut();
-         $(".overlay, #thanks").fadeIn("slow"); //показываем форму благодарности
-         $("form").trigger("reset");
-      });
-      return false;
-   });
-*/
    // Скролл в начало по иконке pageup
 
    $(window).scroll(function () {
